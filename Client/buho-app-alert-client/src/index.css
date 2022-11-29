@@ -1,0 +1,52 @@
+/* index.css */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handlee&family=Montserrat:wght@300;400&family=Roboto:wght@300;400&family=Space+Mono&display=swap');
+ 
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+ 
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 640px){
+  :root{
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .nav-container{
+    display: none;
+  }
+
+  .nav{
+    padding: 1.5rem;
+  }
+  
+  #menu-icon{
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+ 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+

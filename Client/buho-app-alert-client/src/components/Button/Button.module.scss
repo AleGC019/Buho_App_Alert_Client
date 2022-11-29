@@ -1,0 +1,28 @@
+@import "../../variables";
+
+
+.Button{
+        padding: 0.5rem 1rem;
+     
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: $--white;
+
+     
+        background: $--light-blue;
+        border: none;
+        border-radius: 0.5rem;
+     
+        cursor: pointer;
+        transition: all ease-in-out 250ms;
+     
+        &:hover,
+        &:focus {
+          transform: scale(1.05);
+        }
+
+        &:disabled{
+          background: $--dim-gray;
+          cursor: not-allowed;
+        }
+}

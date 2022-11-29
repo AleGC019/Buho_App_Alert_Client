@@ -1,0 +1,31 @@
+@import "../../_variables.scss";
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 70vh;
+    width: 100vh;
+
+    background-color: $--main-blue;
+    
+    text-align: center;
+
+    border-radius: 1.5rem;
+
+    .card{
+        width: 100%;
+        max-width: 600px;
+
+        background-color: $--white;
+
+        padding: 2rem;
+        border-radius: 1rem;
+
+        color: $--black;
+    }
+}

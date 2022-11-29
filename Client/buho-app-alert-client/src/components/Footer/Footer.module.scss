@@ -1,0 +1,105 @@
+@import "../../variables";
+
+.footer{
+    width: 100%;
+    height: 7.5vh;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:"logo menu social";
+
+    background-color: $--main-blue;
+
+    figure{
+        grid-area: logo;
+        object-fit: contain;
+
+        
+    }
+
+    .social-media{
+        grid-area: menu;
+
+        display: flex;
+
+        flex: row nowrap;
+
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+
+        .a{
+            text-decoration: none;
+            color: $--white;
+            font-size: 1.5rem;
+        }
+
+        .a:hover{
+            stroke: $--white;
+            fill:  $--light-blue;
+        }
+    }
+
+        .footer-img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+        
+
+        }
+
+
+        .img{
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+        }
+
+        .footer-links{
+            grid-area: social;
+            align-items: center;
+            justify-content: space-between;
+
+            display: flex;
+            flex-direction: column;
+
+
+            padding: 0.5rem;
+
+            color: $--white;
+
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: $--white;
+            
+    
+        }
+
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        .footer-links{
+    
+            padding: 1rem;
+
+        }
+
+        figure{
+            grid-area: logo;
+            object-fit: contain;
+    
+            img{
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+
+    }
+}
+
+

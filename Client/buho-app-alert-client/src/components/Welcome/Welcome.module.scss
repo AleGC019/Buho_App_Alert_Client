@@ -1,0 +1,83 @@
+@import "../../variables";
+
+.Welcome{
+
+    width: 100%;
+    min-height: 100vh;
+  
+
+  
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+
+    .section{
+        width: 100%;
+        min-height: 100vh;
+    
+        border-bottom: $--gray 0.01rem solid;
+
+        gap: 1rem;
+
+
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        align-items: center;
+        gap: 1rem;
+
+        .fluid {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            
+        }
+
+        figure{
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            
+
+            object-fit: contain;
+            min-width: 450px; 
+        }
+
+        .centered-quote {
+            padding: 1rem;
+  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            text-align: center;
+
+            h1, h3{
+                margin: 1rem 0;
+
+                color: $--black;
+                font-size: 2.5em;
+                font-weight: 700;
+            }
+
+            p{
+                width: 100%;
+                max-width: 560px;
+                margin: 1rem 0;
+            
+                font-size: 1.5em;
+                color: $--black;
+  
+            }
+        }
+          
+
+
+    }
+}

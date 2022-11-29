@@ -1,0 +1,248 @@
+@import "../../variables";
+
+.Header{
+    position: sticky;
+    top: 0;
+    left: 0;
+  
+    background-color: $--white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+
+    max-height: 8.5vh;
+
+
+
+    .logo{
+        display: inline-block;
+        object-fit: contain;
+        height: fit-content;
+        cursor: pointer;
+
+        img{
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+    .Div-elements{
+        display: flex;
+        align-items: center;
+    
+        .Icon-user{
+            display: inline-block;
+            object-fit: contain;
+            height: fit-content;
+            
+    
+            img{
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+
+        .Icon-user:hover{
+            cursor: pointer;
+        }
+        
+
+        .Elements{
+
+            display: inline-block;
+            
+            
+            border-style: none;
+    
+        
+            min-width: 7rem;
+            min-height: 3rem;
+        
+            color: $--black;
+    
+            background-color: $--white;
+    
+            text-align: center;
+
+            font-size: 0.8rem;
+            
+            border-left: $--gray 0.01rem solid;
+            border-right: $--gray 0.01rem solid;
+
+            .logo{
+                display: inline-block;
+                object-fit: contain;
+                height: fit-content;
+
+                img{
+                    height: 5rem;
+                    width: 5rem;
+                }
+            }
+
+
+        }
+
+        .Elements:hover{
+            
+            background-color: $--dark-white;
+            transition: all 0.3s ease-in-out;
+
+            cursor: pointer;
+        }
+
+
+        .menu-icon{
+                
+            display: inline-block;
+            margin-right: 0.2rem;
+        
+            max-height: 3.75rem;
+            max-width: 3.75rem;
+        
+        }
+        
+
+        
+    }
+    
+    .Button{
+
+        display: inline-block;
+        
+        border-radius: 1.5rem;
+        border-style: none;
+
+        margin-right: 1rem;
+    
+        min-width: 8rem;
+        min-height: 3rem;
+    
+        color: $--white;
+
+        background-color: $--main-blue;
+
+        text-align: center;
+
+    
+    }
+
+    .Button:hover{
+        
+        background-color: $--light-blue;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        
+    }
+
+    
+    .Button-out{
+
+        display: inline-block;
+        
+        border-radius: 1.5rem;
+        border-style: none;
+
+        margin-right: 1rem;
+    
+        min-width: 8rem;
+        min-height: 3rem;
+    
+        color: $--white;
+
+        background-color: $--main-blue;
+
+        text-align: center;
+
+    
+    }
+
+    .Button-out:hover{
+        
+        background-color: $--light-blue;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        
+    }
+
+
+    .Hamburger{
+        display: none;
+    }
+
+    p{
+        display: inline-block;
+        padding: 1.5rem;
+        
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        color: $--main-blue;
+        text-decoration: none;
+    }
+
+    .Button-out{
+        display: none;
+    }
+
+    .HeaderWrapper{
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px){
+    .Header{
+
+        justify-content: space-between;
+        padding: 1rem;
+
+        .Hamburger{
+            display: none;
+
+            margin-right: 1rem;
+            cursor: pointer;
+            
+        }
+
+        .Div-elements{
+            display: none;
+        }
+        
+        .logo{
+            display: inline-block;
+            object-fit: contain;
+            height: fit-content;
+    
+            img{
+                height: 7rem;
+                width: 7rem;
+            }
+        }
+
+        .Button{
+            display: none;
+        }
+
+        .HeaderWrapper{
+
+      
+
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+        
+
+    }
+}

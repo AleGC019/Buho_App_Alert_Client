@@ -1,0 +1,166 @@
+@import "../../variables";
+
+.Header{
+    position: sticky;
+    top: 0;
+    left: 0;
+  
+    background-color: $--white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+
+    max-height: 10vh;
+
+    .respmenu{
+        display: none;
+
+        a{
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            border-bottom: 2px solid #456789;
+            max-width: 200px;
+            background: #234567;
+            font-variant: small-caps;
+            text-shadow: 1px 1px black;            
+        }
+    }
+
+
+    .Hamburger{
+        display: none;
+    }
+
+    p{
+        display: inline-block;
+        padding: 1.5rem;
+        
+        font-size: 3.5rem;
+        font-weight: 700;
+
+        color: $--main-blue;
+        text-decoration: none;
+    }
+
+
+    .Button{
+
+        display: inline-block;
+        
+        border-radius: 1.5rem;
+        border-style: none;
+
+        margin-right: 1rem;
+    
+        min-width: 13rem;
+        min-height: 3rem;
+    
+        color: $--white;
+
+        background-color: $--main-blue;
+
+        text-align: center;
+
+    
+    }
+
+    .Button:hover{
+        
+        background-color: $--light-blue;
+        transition: all 0.3s ease-in-out;
+        
+    }
+
+    .logo{
+        display: inline-block;
+        object-fit: contain;
+        height: fit-content;
+
+        img{
+            height: 6rem;
+            width: 6rem;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    .Header{
+
+
+        p{
+            display: none;
+        }
+    
+        .Button{
+            margin-right: 5rem;
+    
+            min-width: 15rem;
+            min-height: 3rem;
+        }
+
+        .logo{
+    
+            img{
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+
+        .Hamburger{
+            display: block;
+            margin-right: 1rem;
+        }
+
+        .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+            position: absolute;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            right: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+          }
+          
+          .respmenu .fa-bars, .respmenu .fa-times {
+            font-size: 48px;
+            pointer-events: none;
+          }
+          
+          .respmenu input[type="checkbox"] {
+            opacity: 0;
+          }
+          
+          .respmenu {
+            color: white;
+            position: relative;
+            background: #123456;
+            min-height: 48px;
+          }
+          
+          .respmenu nav {
+            display: none;
+          }
+          
+          .respmenu input:checked ~ nav {
+            display: block;
+          }
+          
+          .respmenu input:checked ~ .fa-bars {
+            display: none;
+          }
+          
+          .respmenu input:not(:checked) ~ .fa-times {
+            display: none;
+          }
+
+    }
+}
